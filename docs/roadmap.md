@@ -14,7 +14,8 @@ Objetivo: preparar o ambiente inicial e a organização do código.
 - definição da estrutura de pastas;
 - criação da base de rotas públicas e administrativas;
 - definição inicial dos módulos do admin;
-- padronização de serviços, componentes e utilitários.
+- padronização de serviços, componentes e utilitários;
+- configuração da base de testes e CI no GitHub.
 
 ## Fase 1 — MVP
 

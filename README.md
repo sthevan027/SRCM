@@ -139,8 +139,9 @@ A documentação detalhada do projeto está organizada em arquivos complementare
 - `docs/roadmap.md`;
 - `docs/riscos.md`;
 - `docs/estrutura.md`;
+- `docs/testes.md`;
 - `docs/licenca.md`.
 
 ## Status atual
 
-Este repositório contém a documentação de descoberta, estruturação e planejamento do SRCM. Nesta etapa, o foco está em consolidar escopo, arquitetura, fluxos, responsabilidades, estrutura de pastas e visão de produto antes do início da configuração do ambiente e da implementação do sistema.
+Este repositório contém a documentação de descoberta, estruturação e planejamento do SRCM. Nesta etapa, o foco está em consolidar escopo, arquitetura, fluxos, responsabilidades, estrutura de pastas, estratégia de testes e visão de produto antes do início da configuração do ambiente e da implementação do sistema.

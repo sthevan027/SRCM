@@ -12,7 +12,8 @@ Para orientar o início do projeto, a stack prevista passa a considerar:
 - **camada de UI**: componentes reutilizáveis para páginas públicas, formulários e área administrativa;
 - **backend/API**: serviço dedicado para autenticação, materiais, locais, QR Codes, anexos e ocorrências;
 - **persistência**: banco relacional para garantir rastreabilidade e histórico;
-- **arquivos**: armazenamento para fotos, certificados e projetos.
+- **arquivos**: armazenamento para fotos, certificados e projetos;
+- **CI/CD**: validações automáticas no GitHub para lint, testes, build e segurança.
 
 A escolha de Solid é coerente com a necessidade de uma interface rápida, responsiva e leve, especialmente para o uso em campo por celular.
 
@@ -121,7 +122,7 @@ A camada em Solid deve ser separada por domínios de negócio, preservando clare
 - stores/serviços para autenticação, materiais, locais, QR Codes e ocorrências;
 - utilitários para formatação, validação e integração com a API.
 
-A árvore prevista do projeto está detalhada em `docs/estrutura.md`.
+A árvore prevista do projeto está detalhada em `docs/estrutura.md`, e a estratégia de validação está descrita em `docs/testes.md`.
 
 ## Considerações de segurança
 
@@ -129,7 +130,9 @@ A árvore prevista do projeto está detalhada em `docs/estrutura.md`.
 - rastreio de autor de cada alteração relevante;
 - segregação entre quem reporta e quem resolve;
 - proteção dos módulos administrativos;
-- preservação de histórico para auditoria.
+- preservação de histórico para auditoria;
+- execução de validações automáticas no GitHub antes de merge;
+- auditoria contínua de dependências e vulnerabilidades.
 
 ## Diretriz de arquitetura de produto
 

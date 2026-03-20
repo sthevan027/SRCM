@@ -10,6 +10,15 @@ A estrutura abaixo não é definitiva, mas serve como guia para a configuração
 
 ```text
 SRCM/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.yml
+│   │   └── feature_request.yml
+│   └── workflows/
+│       ├── ci.yml
+│       ├── lint.yml
+│       ├── security.yml
+│       └── issue-triage.yml
 ├── public/
 │   ├── icons/
 │   └── images/
@@ -88,6 +97,10 @@ SRCM/
 │   │   └── tokens.css
 │   ├── app.tsx
 │   └── entry-client.tsx
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
 ├── docs/
 ├── LICENSE
 ├── package.json
@@ -144,7 +157,8 @@ A árvore foi pensada para atender os seguintes critérios:
 - separação entre uso em campo e administração;
 - facilidade para crescimento sem bagunçar o código;
 - reaproveitamento de componentes;
-- coerência com a futura stack em Solid.
+- coerência com a futura stack em Solid;
+- espaço claro para testes e automações do GitHub.
 
 ## Observação final
 

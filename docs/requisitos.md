@@ -53,6 +53,12 @@ O sistema deve possuir uma área administrativa protegida para operação intern
 ### RF17 — Frontend em Solid
 O frontend do projeto deve ser estruturado em Solid, com separação entre rotas públicas de consulta e rotas administrativas autenticadas.
 
+### RF18 — Estratégia automatizada de testes
+O projeto deve possuir base de testes automatizados para fluxos críticos, incluindo login, cadastro de material, geração de QR Code, leitura de QR, reporte e atualização de informações.
+
+### RF19 — Validação no GitHub
+O repositório deve possuir pipeline de CI para rodar lint, testes, build e verificações de segurança antes do merge.
+
 ## Requisitos não funcionais
 
 ### RNF01 — Simplicidade no campo
@@ -84,3 +90,6 @@ A arquitetura deve permitir evolução futura sem necessidade de reestruturaçã
 
 ### RNF10 — Organização do código
 A estrutura do frontend deve refletir domínios de negócio e separar claramente módulos públicos e administrativos.
+
+### RNF11 — Segurança contínua
+O projeto deve incluir verificações automáticas de dependências vulneráveis, segredos expostos e controles mínimos de segurança no fluxo de CI.
