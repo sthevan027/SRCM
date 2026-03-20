@@ -139,8 +139,7 @@ A documentação detalhada do projeto está organizada em arquivos complementare
 - `docs/roadmap.md`;
 - `docs/riscos.md`;
 - `docs/estrutura.md`;
-- `docs/testes.md`;
-- `docs/licenca.md`.
+- `docs/testes.md`;.
 
 ## Status atual
 
