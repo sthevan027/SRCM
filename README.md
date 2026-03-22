@@ -143,4 +143,40 @@ A documentação detalhada do projeto está organizada em arquivos complementare
 
 ## Status atual
 
-Este repositório contém a documentação de descoberta, estruturação e planejamento do SRCM. Nesta etapa, o foco está em consolidar escopo, arquitetura, fluxos, responsabilidades, estrutura de pastas, estratégia de testes e visão de produto antes do início da configuração do ambiente e da implementação do sistema.
+O projeto passou pela **Fase 0 — Base técnica** (conforme `docs/roadmap.md`):
+
+- ✅ Configuração do projeto frontend em Solid (Vite + SolidJS + Solid Router)
+- ✅ Estrutura de pastas e rotas básicas
+- ✅ Base de testes com Vitest e @solidjs/testing-library
+- ✅ Pipeline CI no GitHub (lint, typecheck, testes, build)
+- ✅ ESLint, Prettier e workflows de segurança
+
+### Como executar
+
+```bash
+pnpm install          # Instalar dependências
+pnpm run dev          # Desenvolvimento
+pnpm run build        # Build de produção
+pnpm run test         # Rodar testes
+pnpm run lint         # Verificar lint
+pnpm run typecheck    # Verificar tipos TypeScript
+```
+
+### Estrutura de testes
+
+Conforme `docs/testes.md`:
+
+```
+tests/
+├── unit/
+│   ├── infra/        # Testes de infraestrutura
+│   ├── app/          # Testes de componentes
+│   ├── auth/
+│   ├── materiais/
+│   ├── qrcodes/
+│   └── ocorrencias/
+├── integration/
+└── e2e/
+```
+
+**Nota**: O frontend está configurado como SPA (Vite + Solid) na base. A migração para SolidStart pode ser feita posteriormente, conforme evolução do framework.

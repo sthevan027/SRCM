@@ -1,0 +1,39 @@
+name: Bug Report
+description: Reportar um problema ou comportamento inesperado
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar! Preencha os campos abaixo.
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição do bug
+      placeholder: Descreva o problema de forma clara
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Vá para...
+        2. Clique em...
+        3. Veja o erro
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente
+      placeholder: Navegador, OS, versão...
+    validations:
+      required: false
