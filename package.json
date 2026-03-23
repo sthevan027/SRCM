@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Sistema de Rastreabilidade e Controle de Materiais",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

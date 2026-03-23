@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# Lock file do npm (o projeto usa pnpm)
+package-lock.json
+
 # Build output
 dist/
 .vinxi/

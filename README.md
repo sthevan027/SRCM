@@ -151,7 +151,44 @@ O projeto passou pela **Fase 0 — Base técnica** (conforme `docs/roadmap.md`):
 - ✅ Pipeline CI no GitHub (lint, typecheck, testes, build)
 - ✅ ESLint, Prettier e workflows de segurança
 
-### Como executar
+### Pré-requisitos
+
+- **Node.js 18+** (recomendado: Node 20 LTS)
+- **pnpm** como gerenciador de pacotes
+
+### Setup do ambiente
+
+**1. Instalar/atualizar Node.js (se necessário)**
+
+Se você usa **nvm** (Node Version Manager):
+
+```bash
+nvm install 20
+nvm use
+```
+
+Se você usa **fnm** (Fast Node Manager):
+
+```bash
+fnm install 20
+fnm use
+```
+
+Sem gerenciador de versões? Instale o **nvm** (`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash`) ou **fnm** (`curl -fsSL https://fnm.vercel.app/install | bash`).
+
+O projeto inclui um arquivo `.nvmrc` com a versão recomendada. No diretório do projeto, execute `nvm use` ou `fnm use` para selecionar a versão correta automaticamente.
+
+**2. Habilitar pnpm via Corepack**
+
+O Node.js inclui o Corepack para gerenciar pnpm. Após ter Node 18+:
+
+```bash
+corepack enable
+```
+
+Se necessário, execute com `sudo`. O `package.json` já define a versão do pnpm via `packageManager`.
+
+**3. Instalar dependências e executar**
 
 ```bash
 pnpm install          # Instalar dependências
@@ -161,6 +198,10 @@ pnpm run test         # Rodar testes
 pnpm run lint         # Verificar lint
 pnpm run typecheck    # Verificar tipos TypeScript
 ```
+
+### Sobre vulnerabilidades (npm audit)
+
+O `npm audit` pode reportar vulnerabilidades moderadas no esbuild (via Vite/Vitest). A [GHSA-67mh-4wv8-2f99](https://github.com/advisories/GHSA-67mh-4wv8-2f99) afeta o servidor de desenvolvimento do esbuild — o Vite usa seu próprio dev server, portanto o impacto prático é reduzido. A correção definitiva virá com a migração futura para Vite 6+.
 
 ### Estrutura de testes
 
