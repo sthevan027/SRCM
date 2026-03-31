@@ -1,3 +1,5 @@
+import "./index.css";
+import "./extra.css";
 import { render } from "solid-js/web";
 import App from "./App";
 
