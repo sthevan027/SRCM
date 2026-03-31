@@ -1,3 +1,4 @@
+import { For } from "solid-js";
 import PageShell from "~/components/PageShell";
 import { publicLinks } from "~/lib/navigation";
 
@@ -13,12 +14,14 @@ export default function Home() {
         administrativa.
       </p>
       <div class="panel-grid">
-        {publicLinks.map((link) => (
-          <a class="panel panel-link" href={link.href}>
-            <strong>{link.label}</strong>
-            <span>{link.description}</span>
-          </a>
-        ))}
+        <For each={publicLinks}>
+          {(link) => (
+            <a class="panel panel-link" href={link.href}>
+              <strong>{link.label}</strong>
+              <span>{link.description}</span>
+            </a>
+          )}
+        </For>
       </div>
       <div class="info">
         <span class="badge">Desenvolvedor: Sthevan Santos</span>
