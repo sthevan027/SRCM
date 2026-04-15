@@ -6,6 +6,8 @@ O SRCM é um projeto de sistema interno voltado para obras industriais, com foco
 
 O conceito central do sistema é simples: cada local de armazenamento ou conjunto de materiais recebe um QR Code único. Ao escanear esse código, qualquer colaborador autorizado, integrante da fiscalização ou equipe operacional pode acessar rapidamente uma página leve com os dados do material, seus anexos e seu contexto operacional. A mesma interface também permite registrar avisos, melhorias e não conformidades, gerando tratativas dentro de um dashboard central.
 
+![Fluxograma SRCM](Imagens/Fluxograma%20SCRM.jpeg)
+
 ## Objetivo principal
 
 Garantir organização, rastreabilidade e controle dos materiais em ambiente de obra, apoiando a evolução da maturidade 5S por meio de um processo digital simples, rápido e auditável.
