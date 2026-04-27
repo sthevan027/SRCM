@@ -1,25 +1,22 @@
 import { For } from "solid-js";
-import PageShell from "~/components/PageShell";
 import { adminModules } from "~/lib/navigation";
 
 export default function AdminHome() {
   return (
-    <PageShell
-      badge="Administração"
-      title="Núcleo administrativo"
-      lead="Primeira camada da área protegida, organizada por módulos."
-    >
-      <section class="panel-grid">
+    <section class="admin-page">
+      <h2>Núcleo administrativo</h2>
+      <p>Visão inicial da área protegida, organizada por módulos.</p>
+
+      <div class="admin-grid">
         <For each={adminModules}>
           {(module) => (
-            <a class="panel panel-link" href={module.href}>
+            <a class="admin-card panel-link" href={module.href}>
               <strong>{module.label}</strong>
               <span>{module.description}</span>
             </a>
           )}
         </For>
-      </section>
-      <p class="footer">Base inicial para cadastro, gestão e auditoria.</p>
-    </PageShell>
+      </div>
+    </section>
   );
 }

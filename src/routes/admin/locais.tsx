@@ -1,13 +1,12 @@
-import ModulePlaceholder from "~/components/ModulePlaceholder";
-
 export default function Locais() {
   return (
-    <ModulePlaceholder
-      badge="Admin"
-      title="Locais"
-      lead="Pátios, malhões, equipamentos e áreas de armazenamento."
-    >
-      <p>Base inicial para organizar os pontos físicos associados aos QR Codes.</p>
-    </ModulePlaceholder>
+    <section class="admin-page">
+      <h2>Locais</h2>
+      <p>Pátios, malhões, equipamentos e áreas de armazenamento.</p>
+
+      <div class="admin-card">
+        <p>Base inicial para organizar os pontos físicos associados aos QR Codes.</p>
+      </div>
+    </section>
   );
 }

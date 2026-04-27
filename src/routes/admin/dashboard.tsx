@@ -1,32 +1,23 @@
-import PageShell from "~/components/PageShell";
-
 export default function AdminDashboard() {
   return (
-    <PageShell
-      badge="Dashboard"
-      title="Painel operacional"
-      lead="Estrutura inicial para acompanhar materiais, locais e ocorrências."
-    >
-      <section class="panel-grid">
-        <article class="panel">
+    <section class="admin-page">
+      <h2>Painel operacional</h2>
+      <p>Estrutura inicial para acompanhar materiais, locais e ocorrências.</p>
+
+      <div class="admin-grid">
+        <article class="admin-card">
           <strong>Materiais</strong>
-          <span>0 cadastrados</span>
+          <p>0 cadastrados</p>
         </article>
-        <article class="panel">
+        <article class="admin-card">
           <strong>QR Codes</strong>
-          <span>0 emitidos</span>
+          <p>0 emitidos</p>
         </article>
-        <article class="panel">
+        <article class="admin-card">
           <strong>Ocorrências</strong>
-          <span>0 abertas</span>
+          <p>0 abertas</p>
         </article>
-      </section>
-      <section class="stack">
-        <p>
-          Essa área vai concentrar filtros, tratativas e indicadores da
-          operação.
-        </p>
-      </section>
-    </PageShell>
+      </div>
+    </section>
   );
 }

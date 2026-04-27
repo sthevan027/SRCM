@@ -3,6 +3,8 @@ import { Suspense } from "solid-js";
 import Home from "~/routes/index";
 import Login from "~/routes/login";
 import QRDetails from "~/routes/qr/[codigo]";
+import RequireAdmin from "~/components/RequireAdmin";
+import AdminLayout from "~/components/AdminLayout";
 import AdminHome from "~/routes/admin";
 import AdminDashboard from "~/routes/admin/dashboard";
 import Materiais from "~/routes/admin/materiais";
@@ -18,13 +20,22 @@ export default function App() {
         <Route path="/" component={Home} />
         <Route path="/login" component={Login} />
         <Route path="/qr/:codigo" component={QRDetails} />
-        <Route path="/admin" component={AdminHome} />
-        <Route path="/admin/dashboard" component={AdminDashboard} />
-        <Route path="/admin/materiais" component={Materiais} />
-        <Route path="/admin/locais" component={Locais} />
-        <Route path="/admin/qrcodes" component={QRCodes} />
-        <Route path="/admin/ocorrencias" component={Ocorrencias} />
-        <Route path="/admin/usuarios" component={Usuarios} />
+        <Route
+          path="/admin"
+          component={() => (
+            <RequireAdmin>
+              <AdminLayout />
+            </RequireAdmin>
+          )}
+        >
+          <Route path="/" component={AdminHome} />
+          <Route path="dashboard" component={AdminDashboard} />
+          <Route path="materiais" component={Materiais} />
+          <Route path="locais" component={Locais} />
+          <Route path="qrcodes" component={QRCodes} />
+          <Route path="ocorrencias" component={Ocorrencias} />
+          <Route path="usuarios" component={Usuarios} />
+        </Route>
       </Router>
     </Suspense>
   );

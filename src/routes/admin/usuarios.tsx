@@ -1,13 +1,12 @@
-import ModulePlaceholder from "~/components/ModulePlaceholder";
-
 export default function Usuarios() {
   return (
-    <ModulePlaceholder
-      badge="Admin"
-      title="Usuários"
-      lead="Perfis, permissões e responsabilidade operacional."
-    >
-      <p>A autenticação e a matriz de acesso serão conectadas nessa área.</p>
-    </ModulePlaceholder>
+    <section class="admin-page">
+      <h2>Usuários</h2>
+      <p>Perfis, permissões e responsabilidade operacional.</p>
+
+      <div class="admin-card">
+        <p>A autenticação e a matriz de acesso serão conectadas nessa área.</p>
+      </div>
+    </section>
   );
 }
