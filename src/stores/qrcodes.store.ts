@@ -42,5 +42,5 @@ export function getQRByMaterialId(materialId: string): QRCodeItem | undefined {
 }
 
 export function getQRByCodigo(codigo: string): QRCodeItem | undefined {
-  return qrcodes().find((qr) => qr.codigo_qr === codigo);
+  return qrcodes().find((qr) => qr.codigo_qr === codigo && qr.status_qr === 'ativo');
 }

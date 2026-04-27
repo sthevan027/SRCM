@@ -115,3 +115,8 @@ export function seedIfNeeded(): void {
   storage.set(KEYS.OCORRENCIAS, []);
   localStorage.setItem(KEYS.SEEDED, '1');
 }
+
+// Side-effect: run before any store module initializes its signals from localStorage.
+// Import this file first in main.tsx so the execution order guarantee of ES static
+// imports ensures storage is populated before signal creation.
+seedIfNeeded();
