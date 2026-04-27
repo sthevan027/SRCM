@@ -1,26 +1,31 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@solidjs/testing-library";
+import { Router, Route } from "@solidjs/router";
 import Home from "~/routes/index";
 
-/**
- * Teste de infraestrutura: validar que a rota principal carrega.
- * Conforme docs/testes.md - validação de rotas básicas
- */
+function renderHome() {
+  return render(() => (
+    <Router>
+      <Route path="/*" component={Home} />
+    </Router>
+  ));
+}
+
 describe("Página inicial", () => {
   it("deve renderizar o título SRCM", () => {
-    render(() => <Home />); // Solid Testing Library: passa função que retorna componente
+    renderHome();
     expect(screen.getByRole("heading", { name: /SRCM/i })).toBeInTheDocument();
   });
 
   it("deve exibir descrição do sistema", () => {
-    render(() => <Home />);
+    renderHome();
     expect(
       screen.getByText(/Sistema de Rastreabilidade e Controle de Materiais/i)
     ).toBeInTheDocument();
   });
 
   it("deve mencionar QR Code na página", () => {
-    render(() => <Home />);
+    renderHome();
     expect(screen.getByText(/QR Code/i)).toBeInTheDocument();
   });
 });
