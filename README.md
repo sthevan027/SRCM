@@ -1,5 +1,9 @@
 # SRCM
 
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+
+![SolidJS](https://img.shields.io/badge/SolidJS-1.9-2C4F7C?logo=solid&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-2-6E9F18?logo=vitest&logoColor=white) ![pnpm](https://img.shields.io/badge/pnpm-9-F69220?logo=pnpm&logoColor=white)
+
 Sistema de Rastreabilidade e Controle de Materiais.
 
 O SRCM é um projeto de sistema interno voltado para obras industriais, com foco em organização operacional, rastreabilidade de materiais e apoio ao avanço da maturidade 5S. A proposta surgiu a partir de uma necessidade prática observada em campo: a dificuldade de manter pátios, malhões, equipamentos e áreas de armazenamento organizados, padronizados e auditáveis ao longo do ciclo da obra.
