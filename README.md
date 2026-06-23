@@ -1,8 +1,16 @@
-# SRCM
+# ObraTrack
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
 ![SolidJS](https://img.shields.io/badge/SolidJS-1.9-2C4F7C?logo=solid&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-2-6E9F18?logo=vitest&logoColor=white) ![pnpm](https://img.shields.io/badge/pnpm-9-F69220?logo=pnpm&logoColor=white)
+
+## 🚀 Evolução: de controle interno para SaaS de rastreabilidade
+
+**De → Para:** de sistema interno de 5S para produto multiempresa de rastreabilidade de materiais em obra.
+
+**Novas funcionalidades:** app de campo offline-first (registra sem internet e sincroniza depois); dashboard de consumo × orçado por obra e centro de custo com alertas de divergência; multiusuário e multiobra com papéis (fiscalização, almoxarife, gestor).
+
+**Mudanças na lógica:** o QR passa a apontar para lote/movimentação, não só local; estado local-first com fila de sincronização e resolução de conflito; dados isolados por obra (multitenant).
 
 Sistema de Rastreabilidade e Controle de Materiais.
 
